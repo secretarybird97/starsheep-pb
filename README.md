@@ -6,9 +6,23 @@ Esta pagina web fue creada con SvelteKit. Para poder poder correrla, se necesita
 
 [GitHub_Repo](https://github.com/secretarybird97/starsheep-pb)
 
-## Setup del proyecto
+## Correr utilizando Docker (recomendado)
 
-Instalar pnpm (en caso de no tenerlo)
+```bash
+docker-compose up -d
+```
+
+La pagina web se encontrara en [localhost:3000](http://localhost:3000)
+
+## Correr localmente
+
+Para poder poder correrla de manera nativa, se necesita tener instalado Node.js y pnpm. (Probada en Linux y WSL2!!!)
+
+### Instalar dependencias
+
+En caso de no tener instalado Node.js, se puede instalar desde [aqui](https://nodejs.org/en/download/)
+
+Instalar pnpm
 
 ```bash
 npm install -g pnpm
@@ -19,8 +33,6 @@ Instalar las dependencias del proyecto
 ```bash
 pnpm install
 ```
-
-## Correr el proyecto
 
 Inicializar base de datos
 

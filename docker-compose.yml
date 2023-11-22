@@ -7,7 +7,7 @@ services:
     restart: unless-stopped
     build:
       context: .
-      dockerfile: ./Docker/db/Dockerfile
+      dockerfile: ./docker/db/Dockerfile
     ports:
       - '8090:8090'
     healthcheck: #optional (recommended) since v0.10.0
@@ -21,7 +21,7 @@ services:
     image: build
     build:
       context: .
-      dockerfile: ./Docker/app/Dockerfile
+      dockerfile: ./docker/app/Dockerfile
     environment:
       - NODE_ENV=production
     depends_on:
