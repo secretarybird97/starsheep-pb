@@ -4,3 +4,4 @@ RUN apk add --no-cache git github-cli libc6-compat
 RUN yarn global add pnpm
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
+RUN pnpm config set store-dir "$PNPM_HOME/.pnpm-store"
