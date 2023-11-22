@@ -1,7 +1,7 @@
 FROM node:lts-alpine
 RUN apk update
 RUN apk add --no-cache git github-cli libc6-compat
-RUN yarn global add pnpm
+RUN corepack enable
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
-RUN pnpm config set store-dir "$PNPM_HOME/.pnpm-store"
+RUN pnpm config set store-dir "$PNPM_HOME/store"

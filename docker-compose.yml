@@ -18,9 +18,9 @@ services:
       timeout: 5s
       retries: 5
 
-  build:
+  app:
     container_name: sveltekit-app
-    image: build
+    image: sveltekit-app
     build:
       context: .
       dockerfile: ./docker/app/Dockerfile
