@@ -23,7 +23,7 @@ services:
     image: sveltekit-app
     build:
       context: .
-      dockerfile: ./docker/app/Dockerfile
+      dockerfile: ./docker/sveltekit-app/Dockerfile
     environment:
       - NODE_ENV=production
     depends_on:

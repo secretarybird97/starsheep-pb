@@ -1,3 +1,4 @@
+.devcontainer
 .dockerignore
 .vscode
 .svelte-kit
