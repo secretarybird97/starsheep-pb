@@ -2,12 +2,12 @@ version: '3'
 
 services:
   db:
-    container_name: db
+    container_name: pocketbase
     image: pocketbase
     restart: unless-stopped
     build:
       context: .
-      dockerfile: ./docker/db/Dockerfile
+      dockerfile: ./docker/pocketbase/Dockerfile
     ports:
       - '8090:8090'
     healthcheck: #optional (recommended) since v0.10.0
@@ -17,7 +17,7 @@ services:
       retries: 5
 
   build:
-    container_name: build
+    container_name: sveltekit-app
     image: build
     build:
       context: .

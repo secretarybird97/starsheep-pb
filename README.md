@@ -14,6 +14,12 @@ docker-compose up -d
 
 La pagina web se encontrara en [localhost:3000](http://localhost:3000)
 
+Para detener el contenedor
+
+```bash
+docker-compose down
+```
+
 ## Correr localmente
 
 Para poder poder correrla de manera nativa, se necesita tener instalado Node.js y pnpm. (Probada en Linux y WSL2!!!)
