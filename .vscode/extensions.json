@@ -1,0 +1,12 @@
+{
+	"recommendations": [
+		"svelte.svelte-vscode",
+		"dbaeumer.vscode-eslint",
+		"esbenp.prettier-vscode",
+		"bradlc.vscode-tailwindcss",
+		"ecmel.vscode-html-css",
+		"christian-kohler.npm-intellisense",
+		"VisualStudioExptTeam.vscodeintellicode",
+		"ms-azuretools.vscode-docker"
+	]
+}

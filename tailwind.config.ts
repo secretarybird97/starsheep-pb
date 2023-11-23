@@ -20,12 +20,7 @@ export default {
 		skeleton({
 			themes: {
 				custom: [UABC_THEME],
-				preset: [
-					{
-						name: 'modern',
-						enhancements: true
-					}
-				]
+				preset: ['modern', 'skeleton']
 			}
 		})
 	]

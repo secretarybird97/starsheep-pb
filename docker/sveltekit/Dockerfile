@@ -1,5 +1,5 @@
 FROM node:lts-alpine AS base
-RUN corepack enable
+RUN npm install -g pnpm
 
 FROM base AS deps
 RUN apk add --no-cache libc6-compat

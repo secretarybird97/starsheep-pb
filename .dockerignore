@@ -6,6 +6,7 @@ build
 db
 docker
 node-modules
+.pnpm-store
 .git
 .gitattributes
 .eslintignore

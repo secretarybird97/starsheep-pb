@@ -1,15 +1,20 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/alpine
 {
-	"name": "Alpine",
+	"name": "SvelteKit Dev Container",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"build": {"dockerfile": "Dockerfile"},
+	"build": { "dockerfile": "Dockerfile" },
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
+	"features": {
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {}
+	},
+
+// Enable Tini for Docker-in-Docker feature
+	"runArgs": ["--init"],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [3000, 8090, 5173, 5174],
+	"forwardPorts": [3000, 8090, 5173],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "pnpm install",
@@ -18,10 +23,25 @@
 	"customizations": {
 		// Configure properties specific to VS Code.
 		"vscode": {
-			"extensions": ["svelte.svelte-vscode", "dbaeumer.vscode-eslint", "esbenp.prettier-vscode", "bradlc.vscode-tailwindcss", "visualstudioexptteam.vscodeintellicode"]
+			"extensions": [
+				"svelte.svelte-vscode",
+				"dbaeumer.vscode-eslint",
+				"esbenp.prettier-vscode",
+				"bradlc.vscode-tailwindcss",
+				"ecmel.vscode-html-css",
+				"christian-kohler.npm-intellisense",
+				"VisualStudioExptTeam.vscodeintellicode",
+				"ms-azuretools.vscode-docker"
+			],
+			"settings": {
+				"telemetry.telemetryLevel": "off",
+				"redhat.telemetry.enabled": false,
+				"editor.formatOnSave": true,
+				"files.insertFinalNewline": true
+			}
 		}
-	}
+	},
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
+	"remoteUser": "node"
 }

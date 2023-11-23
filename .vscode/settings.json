@@ -117,12 +117,16 @@
 	],
 	"[svelte]": {
 		"editor.defaultFormatter": "svelte.svelte-vscode"
-	  },"files.associations": {
+	},
+	"files.associations": {
 		"*.css": "tailwindcss"
-	  },"editor.quickSuggestions": {
+	},
+	"editor.quickSuggestions": {
 		"strings": "on"
-	  },"editor.defaultFormatter": "esbenp.prettier-vscode",
-	  "[javascript]": {
+	},
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"[javascript]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	  },"typescript.suggest.paths": false,"javascript.suggest.paths": false,   "editor.linkedEditing": true
+	},
+	"editor.linkedEditing": true
 }
