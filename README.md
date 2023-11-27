@@ -4,7 +4,7 @@
  <h1>Starsheep Marketplace</h1>
 </div>
 
-Code Crafters: Miguel A. Cuevas G. & Milka Y. Trinidad Gutiérrez
+Code Crafters: Miguel A. Cuevas G. & Milka Y. Trinidad G.
 
 Esta pagina web fue creada con SvelteKit. Creedenciales para probar aplicación:
 
