@@ -4,7 +4,7 @@
  <h1>Starsheep Marketplace</h1>
 </div>
 
-Code Crafters: Miguel A. Cuevas G. & Milka Yamil T.
+Code Crafters: Miguel A. Cuevas G. & Milka Y. Trinidad Gutiérrez
 
 Esta pagina web fue creada con SvelteKit. Creedenciales para probar aplicación:
 
@@ -59,6 +59,7 @@ pnpm install --prod --frozen-lockfile
 ```
 
 Construir aplicación
+
 ```bash
 pnpm build
 ```
