@@ -17,7 +17,7 @@
 <AppBar>
 	<svelte:fragment slot="lead">
 		<a href="/"
-			><div class="container h-full mx-auto flex justify-start items-center w-f">
+			><div class="container h-full mx-auto flex justify-start items-center">
 				<img class="w-20 mx-5" src={Logo} alt="Logo de la UABC" />
 				<div class="space-y-0 text-center flex flex-col items-start">
 					<h2 class="h3 text-primary-500 font-bold">Universidad Autónoma de Baja California</h2>
