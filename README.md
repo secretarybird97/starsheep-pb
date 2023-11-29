@@ -21,6 +21,7 @@ La mejor forma de correr la aplicación es utilizando docker, ya que todo se man
 
 ```bash
 cd docker
+docker compose build
 docker compose up -d
 ```
 
