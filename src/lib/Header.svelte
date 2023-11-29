@@ -28,6 +28,9 @@
 		>
 	</svelte:fragment>
 	<div class="container h-full mx-auto flex justify-end items-center space-x-5">
+		<a href="/about" class="btn btn-sm bg-red-400 border-red-800 text-white variant-ghost-surface">
+			About us
+		</a>
 		<a
 			href="/sellNFT"
 			class="btn btn-sm bg-red-400 border-red-800 text-white variant-ghost-surface"
